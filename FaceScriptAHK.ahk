@@ -4,12 +4,12 @@ Use at your own risk
 */
 
 CoordMode, ToolTip , Screen
-face_expression := Null
-timeSleep := 550
+face_expression := "Null"
 face_aoa := "Null"
 
 SetKeyDelay, 0
 
+^ESC::ExitApp
 F12::Reload
 F11::Suspend
 
