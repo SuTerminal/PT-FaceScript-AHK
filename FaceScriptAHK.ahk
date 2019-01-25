@@ -13,6 +13,19 @@ SetKeyDelay, 0
 F12::Reload
 F11::Suspend
 
+NumpadIns::send, {Enter}/e{Enter}
+
+F1::send, {Enter}/achoo{Enter}
+F2::send, {Enter}/blush{Enter}
+F3::send, {Enter}/yawn{Enter}
+F4::send, {Enter}/sleep{Enter}
+F5::send, {Enter}{^}{^}{Enter}
+F6::send, {Enter}/e =-={Enter}
+F7::send, {Enter}/e OAO{Enter}
+F8::send, {Enter}/-3-{Enter}
+
+NumpadEnter::send, {Enter}
+
 NumpadAdd::
 send, {+}
 face_expression := "c"
@@ -106,8 +119,6 @@ NumpadEnd::left_down(face_expression, face_aoa)
 NumpadDown::down(face_expression, face_aoa)
 NumpadPgDn::right_down(face_expression, face_aoa)
 
-
-
 left_up(x, y){
 if (y == false)
 send, {Enter}/e g%x%g{Enter}
@@ -150,8 +161,6 @@ else if (y == true)
 send, {Enter}/e a%x%>{Enter}
 }
 
-
-
 left_down(x, y){
 if (y == false)
 send, {Enter}/e d%x%d{Enter}
@@ -172,21 +181,4 @@ send, {Enter}/e b%x%b{Enter}
 else if (y == true)
 send, {Enter}/e a%x%b{Enter}
 }
-
-NumpadIns::send, {Enter}/e{Enter}
-
-
-/*Quick commands*/
-F1::send, {Enter}/achoo{Enter}
-F2::send, {Enter}/blush{Enter}
-F3::send, {Enter}/yawn{Enter}
-F4::send, {Enter}/sleep{Enter}
-
-F5::send, {Enter}{^}{^}{Enter}
-F6::send, {Enter}/e =-={Enter}
-F7::send, {Enter}/e OAO{Enter}
-F8::send, {Enter}/-3-{Enter}
-/*Lets make Enter great again*/
-NumpadEnter::send, {Enter}
-
 
